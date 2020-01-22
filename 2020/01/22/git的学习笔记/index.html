@@ -8,18 +8,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>小鱼个人博客</title>
+<title>git的学习笔记 - 小鱼个人博客</title>
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="小鱼个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="1.查看当前的仓库的修改状态1git status">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git的学习笔记">
+<meta property="og:url" content="http://yoursite.com/2020/01/22/git%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="小鱼个人博客">
+<meta property="og:description" content="1.查看当前的仓库的修改状态1git status">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:image" content="http://yoursite.com/images/desert.jpg">
+<meta property="article:published_time" content="2020-01-22T13:49:50.000Z">
+<meta property="article:modified_time" content="2020-01-22T15:37:50.148Z">
 <meta property="article:author" content="Dave Wu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://yoursite.com/images/desert.jpg">
 
 
 
@@ -77,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="小鱼个人博客" height="28">
+                <img src="/images/logo.svg" alt="git的学习笔记" height="28">
             
             </a>
         </div>
@@ -85,7 +89,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active"
+                <a class="navbar-item"
                 href="/">主页</a>
                 
                 <a class="navbar-item"
@@ -113,6 +117,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -127,13 +135,12 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    
 <div class="card">
     
     <div class="card-image">
-        <a href="/2020/01/22/git%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="image is-7by1">
+        <span  class="image is-7by1">
             <img class="thumbnail" src="/images/desert.jpg" alt="git的学习笔记">
-        </a>
+        </span>
     </div>
     
     <div class="card-content article ">
@@ -150,28 +157,100 @@
                 </span>
                 
                 
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/01/22/git%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">git的学习笔记</a>
+                git的学习笔记
             
         </h1>
         <div class="content">
             <h2 id="1-查看当前的仓库的修改状态"><a href="#1-查看当前的仓库的修改状态" class="headerlink" title="1.查看当前的仓库的修改状态"></a>1.查看当前的仓库的修改状态</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="2-添加到暂存区"><a href="#2-添加到暂存区" class="headerlink" title="2.添加到暂存区"></a>2.添加到暂存区</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add 文件名</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-从暂存区添加到本地仓库"><a href="#3-从暂存区添加到本地仓库" class="headerlink" title="3.从暂存区添加到本地仓库"></a>3.从暂存区添加到本地仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;自己的描述&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="4-从本地仓库添加到远程仓库"><a href="#4-从本地仓库添加到远程仓库" class="headerlink" title="4.从本地仓库添加到远程仓库"></a>4.从本地仓库添加到远程仓库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后注意的是；每次添加要git-status-查看状态"><a href="#最后注意的是；每次添加要git-status-查看状态" class="headerlink" title="最后注意的是；每次添加要git status 查看状态"></a>最后注意的是；每次添加要git status 查看状态</h2><hr>
+<h2 id="使用hexo写博客"><a href="#使用hexo写博客" class="headerlink" title="使用hexo写博客"></a>使用hexo写博客</h2><h2 id="基于js，需要node和npm"><a href="#基于js，需要node和npm" class="headerlink" title="基于js，需要node和npm"></a>基于js，需要node和npm</h2><h2 id="0-全局安装hexo-cli"><a href="#0-全局安装hexo-cli" class="headerlink" title="0.全局安装hexo-cli"></a>0.全局安装hexo-cli</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h2 id="00-初始化博客-hexo项目"><a href="#00-初始化博客-hexo项目" class="headerlink" title="00.初始化博客 hexo项目"></a>00.初始化博客 hexo项目</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<h2 id="000-在本地启动服务来浏览效果"><a href="#000-在本地启动服务来浏览效果" class="headerlink" title="000.在本地启动服务来浏览效果"></a>000.在本地启动服务来浏览效果</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-先创建一个博客"><a href="#1-先创建一个博客" class="headerlink" title="1.先创建一个博客"></a>1.先创建一个博客</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="2-清理一下"><a href="#2-清理一下" class="headerlink" title="2. 清理一下"></a>2. 清理一下</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-生成静态文件"><a href="#3-生成静态文件" class="headerlink" title="3. 生成静态文件"></a>3. 生成静态文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-在本地启动服务来浏览博客的内容是否渲染了"><a href="#4-在本地启动服务来浏览博客的内容是否渲染了" class="headerlink" title="4.在本地启动服务来浏览博客的内容是否渲染了"></a>4.在本地启动服务来浏览博客的内容是否渲染了</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="5-安装hexo-deployer-git工具"><a href="#5-安装hexo-deployer-git工具" class="headerlink" title="5.安装hexo-deployer-git工具"></a>5.安装hexo-deployer-git工具</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-修改-config-yml的配置文件"><a href="#6-修改-config-yml的配置文件" class="headerlink" title="6.修改_config.yml的配置文件"></a>6.修改_config.yml的配置文件</h2><p>deploy:<br>  type: ‘git’<br>  repo: ‘<a href="https://github.com/WuDaYuLo/homework.git&#39;">https://github.com/WuDaYuLo/homework.git&#39;</a><br>  branch: master</p>
+<h2 id="7-修改博客的主题"><a href="#7-修改博客的主题" class="headerlink" title="7.修改博客的主题"></a>7.修改博客的主题</h2><p>git clone github的地址 themes/以主题名的文件夹名</p>
+<h2 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
         </div>
         
         
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/01/22/git%E7%9A%84%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#more">阅读更多</a>
-                </div>
-            </div>
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>支付宝</span>
+    <div class="qrcode"><img src="/images/alipay.jpg" alt="支付宝"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>微信</span>
+    <div class="qrcode"><img src="/images/wechatpay.jpg" alt="微信"></div>
+</a>
+
+                
+                <!-- Visit https://www.paypal.com/donate/buttons/ to get your donate button -->
+
+<div class="notification is-danger">
+    You forgot to set the <code>business</code> and <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.
+</div>
+
+                
+                
+<div class="notification is-danger">
+    You forgot to set the <code>url</code> Patreon. Please set it in <code>_config.yml</code>.
+</div>
+
+                
         </div>
-        
-        
     </div>
 </div>
 
@@ -179,9 +258,26 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '9wbeKE5iG0IVy7KhM0xVHOQW-gzGzoHsz',
+        app_key: 'iVoDeU2jCC9P7Mp2ECM0PKhR',
+        placeholder: 'Say something...'
+    });
+</script>
 
-
-
+    </div>
+</div>
 </div>
                 
 
@@ -308,6 +404,90 @@
 </div>
     
         
+
+    <div class="card widget" id="toc">
+        <div class="card-content">
+            <div class="menu">
+                <h3 class="menu-label">
+                    目录
+                </h3>
+                <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-查看当前的仓库的修改状态">
+        <span class="has-mr-6">1</span>
+        <span>1.查看当前的仓库的修改状态</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-添加到暂存区">
+        <span class="has-mr-6">2</span>
+        <span>2.添加到暂存区</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-从暂存区添加到本地仓库">
+        <span class="has-mr-6">3</span>
+        <span>3.从暂存区添加到本地仓库</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-从本地仓库添加到远程仓库">
+        <span class="has-mr-6">4</span>
+        <span>4.从本地仓库添加到远程仓库</span>
+        </a></li><li>
+        <a class="is-flex" href="#最后注意的是；每次添加要git-status-查看状态">
+        <span class="has-mr-6">5</span>
+        <span>最后注意的是；每次添加要git status 查看状态</span>
+        </a></li><li>
+        <a class="is-flex" href="#使用hexo写博客">
+        <span class="has-mr-6">6</span>
+        <span>使用hexo写博客</span>
+        </a></li><li>
+        <a class="is-flex" href="#基于js，需要node和npm">
+        <span class="has-mr-6">7</span>
+        <span>基于js，需要node和npm</span>
+        </a></li><li>
+        <a class="is-flex" href="#0-全局安装hexo-cli">
+        <span class="has-mr-6">8</span>
+        <span>0.全局安装hexo-cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#00-初始化博客-hexo项目">
+        <span class="has-mr-6">9</span>
+        <span>00.初始化博客 hexo项目</span>
+        </a></li><li>
+        <a class="is-flex" href="#000-在本地启动服务来浏览效果">
+        <span class="has-mr-6">10</span>
+        <span>000.在本地启动服务来浏览效果</span>
+        </a></li><li>
+        <a class="is-flex" href="#1-先创建一个博客">
+        <span class="has-mr-6">11</span>
+        <span>1.先创建一个博客</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-清理一下">
+        <span class="has-mr-6">12</span>
+        <span>2. 清理一下</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-生成静态文件">
+        <span class="has-mr-6">13</span>
+        <span>3. 生成静态文件</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-在本地启动服务来浏览博客的内容是否渲染了">
+        <span class="has-mr-6">14</span>
+        <span>4.在本地启动服务来浏览博客的内容是否渲染了</span>
+        </a></li><li>
+        <a class="is-flex" href="#5-安装hexo-deployer-git工具">
+        <span class="has-mr-6">15</span>
+        <span>5.安装hexo-deployer-git工具</span>
+        </a></li><li>
+        <a class="is-flex" href="#6-修改-config-yml的配置文件">
+        <span class="has-mr-6">16</span>
+        <span>6.修改_config.yml的配置文件</span>
+        </a></li><li>
+        <a class="is-flex" href="#7-修改博客的主题">
+        <span class="has-mr-6">17</span>
+        <span>7.修改博客的主题</span>
+        </a></li><li>
+        <a class="is-flex" href="#部署到远端">
+        <span class="has-mr-6">18</span>
+        <span>部署到远端</span>
+        </a></li></ul>
+            </div>
+        </div>
+    </div>
+
     
         <div class="card widget">
     <div class="card-content">
@@ -517,7 +697,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="小鱼个人博客" height="28">
+                    <img src="/images/logo.svg" alt="git的学习笔记" height="28">
                 
                 </a>
                 <p class="is-size-7">
