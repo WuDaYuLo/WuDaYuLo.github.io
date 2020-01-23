@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<script src="/js/src/click.js"></script>
+<html <%- has_config('language') ? ' lang="' + get_config('language').substring(0, 2) + '"' : '' %>>
+<head>
+    <%- _partial('common/head') %>
+</head>
+<body class="is-<%= column_count() %>-column">
+    <%- _partial('common/navbar') %>
+    <% function main_column_class() {
+        switch (column_count()) {
+            case 1:
+                return 'is-12';
+            case 2:
+                return 'is-8-tablet is-8-desktop is-8-widescreen';
+            case 3:
+                return 'is-8-tablet is-8-desktop is-6-widescreen'
+        }
+        return '';
+    } %>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column <%= main_column_class() %> has-order-2 column-main"><%- body %></div>
+                <%- _partial('common/widget', { position: 'left' }) %>
+                <%- _partial('common/widget', { position: 'right' }) %>
+            </div>
+        </div>
+		<div style="position:absolute; bottom:100px; left:0px; width:50%">
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=448982262&auto=1&height=66"></iframe>
+		</div>
+    </section>
+    <%- _partial('common/footer') %>
+    <%- _partial('common/scripts') %>
+
+    <% if (has_config('search.type')) { %>
+    <%- _partial('search/' + get_config('search.type')) %>
+    <% } %>
+	
+	<!-- 雪花特效 -->
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      if (windowWidth > 480) {
+        document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+      }
+    </script>
+
+	
+	
+</body>
+</html>
